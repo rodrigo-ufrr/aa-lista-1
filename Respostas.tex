@@ -23,7 +23,7 @@
       \qformat{\textbf{Questão \thequestiontitle: \hfill}}
     \titledquestion{1}
     \begin{parts}
-        \part\ $n + (\log{n}) = \Theta(n)$
+        \part{$n + (\log{n}) = \Theta(n)$}
         \begin{solution}
             $0 \le c_1 \times n \le n + (\log{n}) \le c_2 \times n$\\
             \\
@@ -36,6 +36,33 @@
             \\
             \textbf{Sim, é verdadeira.}
 
+        \end{solution}
+
+        \part{${(n+1)}^{2} = O(2n^{2})$}
+        \begin{solution}
+            $0 \le n^2 < n^3 \times c$\\
+            \\
+            \textbf{Para $n = 2$ e $c=1$:}\\
+            $0 \le 4 < 8$
+        \end{solution}
+
+        \part{${(n+1)}^2=O(2n^{2})$}
+        \begin{solution}
+            $0 \le {(n+1)}^2 \le 2{n}^2 \times c$\\
+            \\
+            \textbf{Para $n=3$:}\\
+            $0 \le 16 \le 18c$\\
+            \\
+            Para qualquer $c \ge 1$, a afirmação acima é verdadeira, portanto:\\
+            ${(n+1)}^2$ \textbf{é} $O(2n^{2})$
+        \end{solution}
+
+        \part{$n-300=\Theta(300n)$}
+        \begin{solution}
+            $0 \le c_1 \times 300n \le n - 300 \le c_2 \times 300n$\\
+            \\
+            \textbf{Para $n=400$:}\\
+            $0 \le 120.000{c_1} \le 100 \le 120.000{c_2} $
         \end{solution}
     \end{parts}
 
