@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
 \usepackage{amsmath}
+\usepackage{graphicx}
 \renewcommand{\solutiontitle}{}
 
 \begin{document}
@@ -131,5 +132,17 @@
         \end{solution}
 
     \end{parts}
+    \titledquestion{7}\
+    \begin{solution}
+        \begin{itemize}
+            \item A raiz deve ser preta;
+            \item Um nó vermelho deve ter como filhos apenas nós pretos;
+            \item Para qualquer nó da árvore, todos os caminhos até as folhas
+                devem ter a mesma quantidade de nós pretos.
+        \end{itemize}
+        \begin{center}
+            \includegraphics[width=.8\textwidth]{img/rbtree}
+        \end{center}
+    \end{solution}
   \end{questions}
 \end{document}
